@@ -75,7 +75,7 @@ const HeaderThree = () => {
                                     </li>
 
                                     <li className="header-btn">
-                                        <Link href="/contact-us">
+                                        <Link href="#">
                                             <a className="edu-btn btn-medium btn-curved">Donate now <i className="icon-4"></i></a>
                                         </Link>
                                     </li>

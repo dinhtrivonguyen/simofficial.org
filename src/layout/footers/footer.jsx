@@ -15,7 +15,7 @@ const footer_contents = {
             widget_title: 'Homepage',
             footer_links: [
                 { link: 'about', title: 'About Us' },
-                { link: '#', title: 'What we do' },
+                { link: 'what-we-do', title: 'What we do' },
                 { link: '#', title: 'Our Projects' },
                 { link: '#', title: 'Our blogs' },
                 { link: '#', title: 'Our Podcast' },
@@ -29,7 +29,6 @@ const footer_contents = {
             footer_links: [
                 { link: '#', title: 'Contact Us' },
                 { link: '#', title: 'Media Kit' },
-                { link: '#', title: "FAQ's" },
             ]
         }
     ]

@@ -7,7 +7,10 @@ const MainMenu = () => {
         <ul className="mainmenu">
             {menu_data.map((menu, i) => (
                 <li key={i} className={`${(menu.submenus && menu.submenus.length > 0) || menu.mega_menu ? 'has-droupdown' : ''}`}>
-                    <a href="#">{menu.title}</a>
+                    {/* Updated this line */}
+                    <Link href={menu.link || '#'}>
+                        <a>{menu.title}</a>
+                    </Link>
                     {menu.submenus && menu.submenus.length > 0 && (
                         <>
                             {!menu.mega_menu &&

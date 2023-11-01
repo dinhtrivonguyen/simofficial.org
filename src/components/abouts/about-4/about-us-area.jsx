@@ -25,6 +25,8 @@ const AboutUsArea = () => {
                                     We’re young professionals who are passionate about making the world a better place
                                 </h2>
                             </div>
+
+
                         </div>
                     </div>
 

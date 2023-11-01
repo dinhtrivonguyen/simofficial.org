@@ -1,33 +1,54 @@
-import React from 'react';
+import Link from "next/link";
+import { useMouseMoveUI } from "../../../contexts/mouse-move-context";
 import { motion } from 'framer-motion';
-import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
-const AboutUsArea = () => {
+const AboutAreaNine = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-section-gap edu-about-area" style={{
-            backgroundColor: '#FFDCED',
+        <div className="gap-bottom-equal edu-about-area" style={{
+            backgroundColor: '#FFF',
         }}>
-            <div className="container">
-                <div className="row g-5">
-                    <div className="col-lg-6">
+            <div className="container edublink-animated-shape">
+                <div className="row g-5 align-items-center">
+                    <div className="col-lg-5">
                         <div className="about-content">
-                            <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <span className="pre-title">About Us</span>
-                                <h2 className="title" style={{
-                                    overflow: 'hidden',
-                                    color: '#072B60',
-                                    fontSize: '50px',
-                                    fontStyle: 'normal',
-                                    fontWeight: 700,
-                                    lineHeight: '60px'
-                                }}>
-                                    We’re young professionals who are passionate about making the world a better place
+                            <div
+                                className="section-title section-left"
+                                data-sal-delay="150"
+                                data-sal="slide-up"
+                                data-sal-duration="800"
+                            >
+                                <h2 className="title">
+                                    <span className="color-textPrimary">
+                                        How to become that girl who inspires
+                                    </span>
                                 </h2>
+                                <p>
+                                    Through topics like "I wish I knew earlier when I was 20," "Tips for work-life balance," and "More women leading," we aim to provide educational and skill development opportunities, empowering them to enhance their mindset and career goals.
+                                </p>
+                                <button
+                                    style={{
+                                        borderRadius: '8px',
+                                        border: '1px solid #D0D0D0',
+                                        background: '#FFF',
+                                        padding: '10px 20px',
+                                        cursor: 'pointer',
+                                        marginTop: '20px',
+                                        color: '#D30060',
+                                        textAlign: 'center',
+                                        fontSize: '18px',
+                                        fontStyle: 'normal',
+                                        fontWeight: '700',
+                                        lineHeight: '32px',
+                                        letterSpacing: '-0.456px',
+                                    }}
+                                    onClick={() => {/* handle your click event here */ }}
+                                >
+                                    Become SIM guest speaker
+                                </button>
                             </div>
                         </div>
                     </div>
-
                     <div className="col-lg-6">
                         <div className="about-image-gallery">
                             <div className="row g-5" id="masonry-gallery">
@@ -56,7 +77,7 @@ const AboutUsArea = () => {
                                         y: mouseReverse(30).y
                                     }}
                                 >
-                                    <img src="/assets/images/icons/SIM icons-10.png" alt="Shape Images" />
+                                    <img src="/assets/images/icons/SIM icons-14.png" alt="Shape Images" />
                                 </motion.li>
                                 <motion.li className="shape-2 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
                                     animate={{
@@ -64,7 +85,7 @@ const AboutUsArea = () => {
                                         y: mouseDirection(30).y
                                     }}
                                 >
-                                    <img src="/assets/images/icons/SIM icons-10.png" alt="Shape Images" />
+                                    <img src="/assets/images/icons/SIM icons-14.png" alt="Shape Images" />
                                 </motion.li>
                                 <motion.li className="shape-3 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
                                     animate={{
@@ -72,7 +93,7 @@ const AboutUsArea = () => {
                                         y: mouseDirection(30).y
                                     }}
                                 >
-                                    <img src="/assets/images/icons/SIM icons-10.png" alt="Shape Images" />
+                                    <img src="/assets/images/icons/SIM icons-14.png" alt="Shape Images" />
                                 </motion.li>
                                 <motion.li className="shape-4 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
                                     animate={{
@@ -88,7 +109,7 @@ const AboutUsArea = () => {
                 </div>
             </div>
         </div>
-    )
-}
+    );
+};
 
-export default AboutUsArea;
+export default AboutAreaNine;

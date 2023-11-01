@@ -1,7 +1,7 @@
 const menu_data = [
     {
         title: 'What we do',
-        link: '#',
+        link: 'what-we-do',
         mega_menu: false,
         submenus: [
             { title: 'Girls Health and Well-being', link: '/' },
@@ -37,7 +37,7 @@ const menu_data = [
     },
     {
         title: 'About us',
-        link: '/about',
+        link: 'about',
     },
     {
         title: 'Our podcast',
