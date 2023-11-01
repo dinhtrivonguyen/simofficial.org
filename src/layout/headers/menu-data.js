@@ -41,7 +41,7 @@ const menu_data = [
     },
     {
         title: 'Our podcast',
-        link: '#',
+        link: 'our-podcast',
     },
 ]
 

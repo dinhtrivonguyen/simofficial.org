@@ -18,7 +18,7 @@ const footer_contents = {
                 { link: 'what-we-do', title: 'What we do' },
                 { link: '#', title: 'Our Projects' },
                 { link: '#', title: 'Our blogs' },
-                { link: '#', title: 'Our Podcast' },
+                { link: 'our-podcast', title: 'Our Podcast' },
                 { link: '#', title: 'Terms of use' }
             ]
         },

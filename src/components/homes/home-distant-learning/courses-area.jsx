@@ -15,15 +15,6 @@ const CoursesArea = () => {
                         You can help put an end to child marriage, child labor, human trafficking, and the water crisis for ethnic minorities in mountainous areas of Vietnam by supporting our projects.
                     </p>
                 </div>
-                {/* <div className="row g-5">
-                    {course_data.slice(0, 4).map((course) => {
-                        return (
-                            <div className="col-md-6 col-lg-4" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800" key={course.id}>
-                                <CourseTypeOne data={course} image_location_path='02' />
-                            </div>
-                        )
-                    })}
-                </div> */}
                 <div className="row g-5 mb-5" style={{marginBottom: '60px'}}>
                     {course_data.slice(0, 4).map((course, index) => {
                         if (index < 2) {
