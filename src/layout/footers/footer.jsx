@@ -4,7 +4,7 @@ import FooterSocial from "./component/footer-social";
 const footer_contents = {
     logoLight: '/assets/images/logo/SIM logo_second logo pink.png',
     logoDark: '/assets/images/logo/SIM logo_second logo pink.png',
-    desc: 'Be a part of a community of ambitious young professionals who are navigating their ambiguities and want to improve their personal and career development.',
+    desc: 'Be a part of a community of ambitious young professionals who are navigating their ambiguities and want to improve their personal and career development. ',
     add: '',
     call: '',
     email: 'admin@simofficial.org',
@@ -14,12 +14,12 @@ const footer_contents = {
             class: 'explore-widget',
             widget_title: 'Homepage',
             footer_links: [
-                { link: 'about-1', title: 'About Us' },
-                { link: 'course-style-1', title: 'What we do' },
-                { link: 'team-1', title: 'Our Projects' },
-                { link: 'event-grid', title: 'Our blogs' },
-                { link: 'team-details', title: 'Our Podcast' },
-                { link: 'purchase-guide', title: 'Terms of use' }
+                { link: 'about', title: 'About Us' },
+                { link: '#', title: 'What we do' },
+                { link: '#', title: 'Our Projects' },
+                { link: '#', title: 'Our blogs' },
+                { link: '#', title: 'Our Podcast' },
+                { link: '#', title: 'Terms of use' }
             ]
         },
         {
@@ -27,9 +27,9 @@ const footer_contents = {
             class: 'quick-link-widget',
             widget_title: 'Links',
             footer_links: [
-                { link: 'contact-us', title: 'Contact Us' },
-                { link: 'gallery-grid', title: 'Media Kit' },
-                { link: 'faq', title: "FAQ's" },
+                { link: '#', title: 'Contact Us' },
+                { link: '#', title: 'Media Kit' },
+                { link: '#', title: "FAQ's" },
             ]
         }
     ]

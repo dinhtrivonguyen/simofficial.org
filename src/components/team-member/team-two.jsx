@@ -24,13 +24,38 @@ const TeamTwo = ({ instructor, image_location_path='02' }) => {
                     </ul>
                 </div>
                 <div className="content">
-                    <h5 className="title">
+                    <h5 className="title" style={{
+                        color: '#D30060',
+                        fontSize: '20px',
+                        fontStyle: 'normal',
+                        fontWeight: '700',
+                        lineHeight: '24px',
+                        letterSpacing: '-0.264px'
+                    }}>
                         <Link href={`/team-details/${instructor.id}`}>
                             <a>{instructor.name}</a>
                         </Link>
                     </h5>
-                    <span className="designation">{instructor.title}</span>
-                    <p>{instructor.sm_text}</p>
+                    <span className="designation" style={{
+                        color: 'rgba(0, 0, 0, 0.80)',
+                        fontSize: '16px',
+                        fontStyle: 'normal',
+                        fontWeight: '400',
+                        lineHeight: '24.461px',
+                        letterSpacing: '-0.176px'
+                    }}>
+                        {instructor.title}
+                    </span>
+                    <p style={{
+                        color: 'rgba(0, 0, 0, 0.80)',
+                        fontSize: '16px',
+                        fontStyle: 'normal',
+                        fontWeight: '400',
+                        lineHeight: '24.461px',
+                        letterSpacing: '-0.176px'
+                    }}>
+                        {instructor.sm_text}
+                    </p>
                 </div>
             </div>
         </div>

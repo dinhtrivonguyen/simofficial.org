@@ -2,11 +2,11 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
-const AdBanner = () => {
+const AdBannerThree = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
         <div className="edu-cta-banner-area home-one-cta-wrapper bg-image" style={{
-            backgroundColor: '#F0FFCA',
+            backgroundColor: '#FFDCED',
             position: 'relative',
             zIndex: '1',
         }}>
@@ -15,7 +15,16 @@ const AdBanner = () => {
                     <div className="row justify-content-center">
                         <div className="col-lg-7">
                             <div className="section-title section-center" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-                                <h2 className="title">Every dollar you contribute will help alleviate these issues among ethnic minorities in Vietnam.</h2>
+                                <h2 className="title" style={{
+                                    color: '#072B60',
+                                    textAlign: 'center',
+                                    fontSize: '40px',
+                                    fontStyle: 'normal',
+                                    fontWeight: '700',
+                                    lineHeight: '60px'
+                                }}>
+                                    Dare to dream. Dare to lead.
+                                </h2>
                             </div>
                         </div>
                     </div>
@@ -25,4 +34,4 @@ const AdBanner = () => {
     )
 }
 
-export default AdBanner;
+export default AdBannerThree;

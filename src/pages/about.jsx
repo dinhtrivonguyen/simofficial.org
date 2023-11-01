@@ -5,7 +5,7 @@ import AboutThreeMain from '../components/abouts/about-3';
 const AboutThree = () => {
     return (
         <Wrapper>
-            <SEO pageTitle={'About Three'} />
+            <SEO pageTitle={'About'} />
             <AboutThreeMain />
         </Wrapper>
     )

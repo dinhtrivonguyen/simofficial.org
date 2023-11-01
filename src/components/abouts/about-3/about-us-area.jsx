@@ -2,37 +2,31 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { useMouseMoveUI } from '../../../contexts/mouse-move-context';
 
-// MissionItem
-function MissionItem({ color, icon, title, text }) {
-    return (
-        <div className="single-item" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
-            <div className={`icon color-extra${color}`}><i className={`icon-${icon}`}></i></div>
-            <div className="content">
-                <h4 className="title">{title}</h4>
-                <p>{text}</p>
-            </div>
-        </div>
-    )
-}
-
 const AboutUsArea = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
-        <div className="edu-section-gap edu-about-area about-style-8">
+        <div className="edu-section-gap edu-about-area" style={{
+            backgroundColor: '#FFDCED',
+        }}>
             <div className="container">
                 <div className="row g-5">
                     <div className="col-lg-6">
                         <div className="about-content">
                             <div className="section-title section-left" data-sal-delay="150" data-sal="slide-up" data-sal-duration="800">
                                 <span className="pre-title">About Us</span>
-                                <h2 className="title">We Provide Best <span className="color-secondary">Education</span> Services For You.</h2>
-                                <span className="shape-line"><i className="icon-19"></i></span>
-                                <p>Magna aliquaenim ad minim veniam quis nostrud exercitation ullamco laborisLorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eius tempor incididunt labore.</p>
+                                <h2 className="title" style={{
+                                    overflow: 'hidden',
+                                    color: '#072B60',
+                                    fontSize: '50px',
+                                    fontStyle: 'normal',
+                                    fontWeight: 700,
+                                    lineHeight: '60px'
+                                }}>
+                                    We’re young professionals who are passionate about making the world a better place
+                                </h2>
                             </div>
-                            <div className="about-mission">
-                                <MissionItem color="02" icon="51" title="Our Mission" text="Magna aliquaenim minim quis nostrud exercitation ulamco labor is Lorem ipsum." />
-                                <MissionItem color="06" icon="52" title="Our Vision" text="Magna aliquaenim minim quis nostrud exercitation ulamco labor is Lorem ipsum." />
-                            </div>
+
+
                         </div>
                     </div>
 
@@ -59,34 +53,34 @@ const AboutUsArea = () => {
                             </div>
                             <ul className="shape-group">
                                 <motion.li className="shape-1 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
-                                    animate={ {
+                                    animate={{
                                         x: mouseReverse(30).x,
                                         y: mouseReverse(30).y
-                                    } }
+                                    }}
                                 >
-                                    <img src="/assets/images/about/shape-33.png" alt="Shape Images" />
+                                    <img src="/assets/images/icons/SIM icons-10.png" alt="Shape Images" />
                                 </motion.li>
                                 <motion.li className="shape-2 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
-                                    animate={ {
+                                    animate={{
                                         x: mouseDirection(30).x,
                                         y: mouseDirection(30).y
-                                    } }
+                                    }}
                                 >
-                                    <img src="/assets/images/about/shape-25.png" alt="Shape Images" />
+                                    <img src="/assets/images/icons/SIM icons-10.png" alt="Shape Images" />
                                 </motion.li>
                                 <motion.li className="shape-3 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
-                                    animate={ {
+                                    animate={{
                                         x: mouseDirection(30).x,
                                         y: mouseDirection(30).y
-                                    } }
+                                    }}
                                 >
-                                    <img src="/assets/images/about/shape-13.png" alt="Shape Images" />
+                                    <img src="/assets/images/icons/SIM icons-10.png" alt="Shape Images" />
                                 </motion.li>
                                 <motion.li className="shape-4 scene" data-sal-delay="500" data-sal="fade" data-sal-duration="200"
-                                    animate={ {
+                                    animate={{
                                         x: mouseReverse(40).x,
                                         y: mouseReverse(40).y
-                                    } }
+                                    }}
                                 >
                                     <span></span>
                                 </motion.li>

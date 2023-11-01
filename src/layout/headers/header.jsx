@@ -59,8 +59,8 @@ const Header = ({ header_style, no_top_bar, disable_full_width, disable_category
                                 <ul className="header-action">
                                     <li className="header-btn">
                                         <Link href="/contact-us">
-                                            <a className="edu-btn btn-medium">Donate now
-                                            <i className="icon-4"></i></a>
+                                            <a className="edu-btn btn-medium">Donate now &nbsp;
+                                            <img src="/assets/images/icons/favorite.png"></img></a>
                                         </Link>
                                     </li>
                                     <li className="mobile-menu-bar d-block d-xl-none">

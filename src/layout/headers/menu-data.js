@@ -37,7 +37,7 @@ const menu_data = [
     },
     {
         title: 'About us',
-        link: '#',
+        link: '/about',
     },
     {
         title: 'Our podcast',

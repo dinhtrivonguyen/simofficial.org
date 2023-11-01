@@ -14,7 +14,7 @@ const dreamTextStyle = {
     verticalAlign: 'middle'
 };
 
-const TeamArea = ({ about_p }) => {
+const TeamAreaTwo = ({ about_p }) => {
     return (
         <>
             <style>
@@ -26,7 +26,7 @@ const TeamArea = ({ about_p }) => {
             `}
             </style>
             <div className={`edu-team-area ${about_p ? 'team-area-5 section-gap-large' : 'team-area-2 edu-section-gap'}`} style={{
-                backgroundColor: '#FFDCED',
+                backgroundColor: '#FFF',
                 position: 'relative',
                 zIndex: '1',
             }}>
@@ -98,4 +98,4 @@ const TeamArea = ({ about_p }) => {
     );
 }
 
-export default TeamArea;
+export default TeamAreaTwo;

@@ -13,6 +13,7 @@ import HeroArea from './hero-area';
 import TeamArea from '../home-online-academy/team-area';
 import ContactMap from '../../contact-us/contact-map';
 import AdBanner from '../home/ad-banner';
+import AboutAreaTwo from './about-area-2';
 
 const index = () => {
     return (
@@ -24,10 +25,10 @@ const index = () => {
                 <ContactMap />
                 <MissionArea home_3={true} />
                 <AdBanner />
+                <AboutAreaTwo/>
                 <CoursesArea />
                 <AboutArea />
                 <TeamArea />
-                <CategoryArea />
                 <BlogArea/>
                 {/* <BrandArea/> */}
                 <Footer style_1={'bg-image footer-style-2'} />
