@@ -4,8 +4,8 @@ const menu_data = [
         link: 'what-we-do',
         mega_menu: false,
         submenus: [
-            { title: 'Girls Health and Well-being', link: '/' },
-            { title: 'Girls Education', link: '/' },
+            { title: 'Girls Health and Well-being', link: '/well-being-for-girls' },
+            { title: 'Girls Education', link: '/girl-education' },
         ]
     },
     {
