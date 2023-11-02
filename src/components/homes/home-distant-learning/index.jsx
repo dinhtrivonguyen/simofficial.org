@@ -7,9 +7,14 @@ import MissionArea from './our-mission';
 import CoursesArea from './courses-area';
 import HeroArea from './hero-area';
 import TeamArea from '../home-online-academy/team-area';
-import ContactMap from '../../contact-us/contact-map';
 import AdBanner from '../home/ad-banner';
 import AboutAreaTwo from './about-area-2';
+import dynamic from 'next/dynamic';
+
+const VietnamMap = dynamic(
+  () => import('../../VietnamMap'),
+  { ssr: false }
+);
 
 const index = () => {
     return (
@@ -18,7 +23,7 @@ const index = () => {
                 <Header no_top_bar={true}/>
                 <HeroArea />
                 <CounterArea home_3={true} />
-                <ContactMap />
+                <VietnamMap/>
                 <MissionArea home_3={true} />
                 <AdBanner />
                 <AboutAreaTwo/>

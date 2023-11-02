@@ -5,7 +5,7 @@ const AboutAreaEleven = () => {
     const { mouseDirection, mouseReverse } = useMouseMoveUI();
     return (
         <div className="gap-bottom-equal edu-about-area" style={{
-            backgroundColor: '#FFDCED',
+            backgroundColor: '#E4F2FF',
         }}>
             <div className="container edublink-animated-shape">
                 <div className="row g-5 align-items-center">
