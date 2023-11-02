@@ -30,23 +30,19 @@ const BlogPostTwo = ({ param }) => {
                 </div>
                 <div className="content position-top">
                     <div className="read-more-btn">
-                        <a className="btn-icon-round">
-                            <i className="icon-4"></i>
-                        </a>
-                        {/* <Link href={`/blog-details/${param.id}`}>
+                        <Link href={`/blog-details/${param.id}`}>
                             <a className="btn-icon-round">
                                 <i className="icon-4"></i>
                             </a>
-                        </Link> */}
+                        </Link>
                     </div>
                     <div className="category-wrap">
                         <a href="#" className="blog-category" style={categoryStyle}>{param.category}</a>
                     </div>
                     <h5 className="title">
-                        <a>{param.title}</a>
-                        {/* <Link href={`/blog-details/${param.id}`}>
-                            
-                        </Link> */}
+                        <Link href={`/blog-details/${param.id}`}>
+                            <a>{param.title}</a>
+                        </Link>
                     </h5>
                     <p>{param.sm_desc}</p>
                 </div>
