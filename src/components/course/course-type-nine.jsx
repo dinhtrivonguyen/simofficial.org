@@ -4,22 +4,23 @@ import { useDispatch, useSelector } from 'react-redux';
 import { cart_course } from '../../redux/features/cart-slice';
 
 const CourseTypeNine = ({ data, classes }) => {
-    const { cartCourses } = useSelector(state => state.cart);
+    const { cartCourses } = useSelector((state) => state.cart);
     const dispatch = useDispatch();
 
     // handle add to cart
     const handleAddToCart = (course) => {
-        dispatch(cart_course({
-            id: course.id,
-            img: `/assets/images/course/course-06/${course.img}`,
-            price: course.course_price,
-            title: course.title
-        }))
-    }
+        dispatch(
+            cart_course({
+                id: course.id,
+                img: `/assets/images/course/course-06/${course.img}`,
+                price: course.course_price,
+                title: course.title,
+            })
+        );
+    };
 
     return (
         <div className={`edu-course course-style-3 ${classes ? classes : ''}`}>
-
             <div className="inner">
                 <div className="thumbnail">
                     <Link href={`/course-details/${data.id}`}>
@@ -31,7 +32,7 @@ const CourseTypeNine = ({ data, classes }) => {
                                     width: '397px',
                                     height: '291px',
                                     objectFit: 'cover',
-                                    borderRadius: '12px 12px 0px 0px'
+                                    borderRadius: '12px 12px 0px 0px',
                                 }}
                             />
                         </a>
@@ -53,25 +54,23 @@ const CourseTypeNine = ({ data, classes }) => {
                         <a
                             className="edu-btn btn-small btn-secondary"
                             onClick={() => handleAddToCart(data)}
-                            style={{ cursor: 'pointer', width: '100%', textAlign: 'center' }}
                         >
-                            {cartCourses.some(item => item.id === data.id) ? 'Donate now' : 'Donate now'}
+                            {cartCourses.some((item) => item.id === data.id)
+                                ? 'Donate now'
+                                : 'Donate now'}
                         </a>
                     </div>
                 </div>
             </div>
-
-
         </div>
         // <div style={containerStyle}>
         //     <div style={cardBackgroundStyle}></div>
 
         // </div>
-
-    )
-}
+    );
+};
 // const cardBackgroundStyle = {
-//     position: 'absolute', 
+//     position: 'absolute',
 //     top: 0,
 //     left: 0,
 //     right: 0,
@@ -83,7 +82,7 @@ const CourseTypeNine = ({ data, classes }) => {
 // };
 
 // const containerStyle = {
-//     position: 'relative', 
+//     position: 'relative',
 //     width: '640px',
 //     height: '688px',
 //     display: 'flex',
