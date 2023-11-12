@@ -6,11 +6,7 @@
     text-align: center;
     padding: 60px 30px;
     @media #{$small-mobile} {
-        padding: 25px;
-    }
-    @media #{$large-mobile} {
-        border-radius: 4px;
-        padding: 20px 10px;
+       padding: 25px;
     }
     .odometer.odometer-auto-theme .odometer-digit .odometer-value {
         @media #{$sm-layout} {
@@ -23,10 +19,6 @@
         em {
             font-family: var(--font-secondary);
             font-weight: var(--p-extra-bold);
-            @media #{$large-mobile} {
-                color: var(--color-extra12);
-                font-size: var(--font-size-b3);
-            }
         }
 
         &.primary-color {
@@ -46,40 +38,17 @@
         }
     }
     .title {
-        text-transform: none;
-        color: #072b60;
-        font-weight: 700;
-        font-size: 18px;
-        margin-bottom: 10px;
-        @media #{$large-mobile} {
-            font-size: 15px;
-            font-weight: 600;
-            line-height: 14px;
-            letter-spacing: -0.15px;
-        }
-    }
-    h5.title {
-        @media #{$large-mobile} {
-            font-size: 20px;
-            line-height: 24px;
-        }
-    }
-    .icon {
-        svg {
-            width: 68px;
-            height: 69px;
-            @media #{$large-mobile} {
-                width: 28px;
-                height: 28px;
-            }
-        }
+        margin-bottom: 0;
+        font-size: 13px;
+        text-transform: uppercase;
+        font-weight: var(--p-medium);
     }
     &.counterup-style-1 {
         box-shadow: 0px 10px 30px 6px rgba(0, 0, 0, 0.07);
-        background-color: rgba(255, 255, 255, 0.8);
+        background-color: rgba(255, 255, 255, 0.8);  
         z-index: 2;
 
-        top: 50%;
+top: 50%;
     }
     &.counterup-style-3 {
         padding: 0;
@@ -87,7 +56,7 @@
         position: relative;
 
         &:after {
-            content: '';
+            content: "";
             height: 100%;
             width: 1px;
             background-color: var(--color-border);
@@ -128,19 +97,19 @@
             font-size: 50px;
             margin: 0 auto 25px;
             &.primary-color {
-                background-color: rgba(26, 182, 157, 0.1);
+                background-color: rgba(26, 182, 157, .1);
                 color: var(--color-primary);
             }
             &.secondary-color {
-                background-color: rgba(255, 91, 92, 0.1);
+                background-color: rgba(255, 91, 92, .1);
                 color: var(--color-secondary);
             }
             &.extra08-color {
-                background-color: rgba(70, 100, 228, 0.1);
+                background-color: rgba(70, 100, 228, .1);
                 color: var(--color-extra08);
             }
             &.extra05-color {
-                background-color: rgba(248, 150, 36, 0.1);
+                background-color: rgba(248, 150, 36, .1);
                 color: var(--color-extra05);
             }
         }
@@ -152,25 +121,25 @@
     }
     &.counterup-style-5 {
         &.primary-color {
-            background-color: rgba(26, 182, 157, 0.1);
+            background-color: rgba(26, 182, 157, .1);
             .count-number {
                 color: var(--color-primary);
             }
         }
         &.secondary-color {
-            background-color: rgba(255, 91, 92, 0.1);
+            background-color: rgba(255, 91, 92, .1);
             .count-number {
                 color: var(--color-secondary);
             }
         }
         &.extra02-color {
-            background-color: rgba(142, 86, 255, 0.1);
+            background-color: rgba(142, 86, 255, .1);
             .count-number {
                 color: var(--color-extra02);
             }
         }
         &.extra05-color {
-            background-color: rgba(248, 150, 36, 0.1);
+            background-color: rgba(248, 150, 36, .1);
             .count-number {
                 color: var(--color-extra05);
             }
@@ -181,10 +150,10 @@
         position: relative;
         padding: 5px 0;
         &:after {
-            content: '';
+            content: "";
             height: 100%;
             width: 1px;
-            background-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(255,255,255, .2);
             position: absolute;
             top: 50%;
             right: -15px;
@@ -214,7 +183,7 @@
     position: relative;
     z-index: 1;
     &:before {
-        content: '';
+        content: "";
         height: 53%;
         width: 100%;
         background-color: var(--color-lighten01);
@@ -246,20 +215,20 @@
             .edu-counterup {
                 border-radius: 0;
                 &:first-child {
-                    border-right: 0.8px solid var(--color-border);
+                    border-right: .8px solid var(--color-border);
                     @media #{$small-mobile} {
                         border-right: none;
                     }
                 }
                 &:nth-child(3) {
-                    border-right: 0.8px solid var(--color-border);
+                    border-right: .8px solid var(--color-border);
                     @media #{$small-mobile} {
                         border-right: none;
                     }
                 }
             }
             &.counterup-box-1 {
-                border-bottom: 0.8px solid var(--color-border);
+                border-bottom: .8px solid var(--color-border);
                 @media #{$small-mobile} {
                     border-bottom: none;
                 }
@@ -298,6 +267,7 @@
     }
 }
 
+ 
 .counterup-area-3 {
     :nth-child(2),
     :nth-child(4) {
@@ -322,7 +292,7 @@
     background: var(--gradient-primary);
     padding: 65px 0;
     :nth-child(2) {
-        .counterup-style-6 {
+        .counterup-style-6{
             &:after {
                 @media #{$md-layout-1} {
                     width: 0px;
@@ -362,20 +332,20 @@
             .edu-counterup {
                 border-radius: 0;
                 &:first-child {
-                    border-right: 0.8px solid var(--color-border);
+                    border-right: .8px solid var(--color-border);
                     @media #{$small-mobile} {
                         border-right: none;
                     }
                 }
                 &:nth-child(3) {
-                    border-right: 0.8px solid var(--color-border);
+                    border-right: .8px solid var(--color-border);
                     @media #{$small-mobile} {
                         border-right: none;
                     }
                 }
             }
             &.counterup-box-1 {
-                border-bottom: 0.8px solid var(--color-border);
+                border-bottom: .8px solid var(--color-border);
                 @media #{$small-mobile} {
                     border-bottom: none;
                 }
@@ -388,7 +358,7 @@
                 z-index: -1;
                 img {
                     @media #{$sm-layout} {
-                        transform: scale(0.5);
+                        transform: scale(.5);
                         animation: none;
                     }
                 }
@@ -424,7 +394,7 @@
             position: absolute;
             z-index: -1;
             img {
-                opacity: 0.9;
+                opacity: .9;
             }
             &.shape-1 {
                 bottom: -70px;
@@ -448,7 +418,7 @@
 .counterup-area-11 {
     background: var(--gradient-primary);
     padding: 65px 0;
-    .counterup-style-6 {
+    .counterup-style-6{
         display: flex;
         @media #{$large-mobile} {
             display: block;
@@ -463,10 +433,10 @@
             background-color: rgba(255, 255, 255, 0.149);
             line-height: 104px;
             @media #{$lg-layout} {
-                width: 80px;
-                height: 80px;
-                line-height: 82px;
-                font-size: 45px;
+               width: 80px;
+               height: 80px;
+               line-height: 82px; 
+               font-size: 45px;
             }
             @media #{$large-mobile} {
                 text-align: center;
@@ -476,7 +446,7 @@
                 font-size: 47px;
                 @media #{$lg-layout} {
                     font-size: 40px;
-                }
+                 }
             }
         }
         .counterup-wrapper {
