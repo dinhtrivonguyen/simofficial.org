@@ -36,9 +36,8 @@ const AboutAreaThirteen = () => {
 
                                     Let Her Shine Fund sponsors 3 main activities: SIM Family Visits, SIM Menstrual Hygiene, and SIM Supermarket for Kids.
                                 </p>
-                                <Link href="#">
-                                    <a className="edu-btn btn-medium">Donate now &nbsp;
-                                        <img src="/assets/images/icons/favorite.png"></img></a>
+                                <Link href="#" className="edu-btn btn-medium">
+                                    Donate now<img src="/assets/images/icons/favorite.png"></img>
                                 </Link>
                             </div>
                         </div>

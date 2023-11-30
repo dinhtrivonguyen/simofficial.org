@@ -1,12 +1,12 @@
 import React from 'react';
 
-const CourseTypeTen = ({ data, classes }) => {
+const CourseTypeEleven = ({ data, classes }) => {
     return (
         <div className={`edu-course course-style-3 ${classes ? classes : ''}`} style={{marginTop: 'auto'}}>
             <div className="inner">
                 <div className="thumbnail">
                     <img
-                        src={`/assets/images/banner/Rectangle 582(1).png`}
+                        src={`/assets/images/banner/Rectangle 582 (2).png`}
                         alt="Course Meta"
                         style={{
                             width: '397px',
@@ -20,17 +20,17 @@ const CourseTypeTen = ({ data, classes }) => {
                 <div className="content" style={{
                     width:'437px'
                 }}>
-                    <span className="course-level">Episode 7</span>
+                    <span className="course-level">Episode 2</span>
                     <h5 className="title" style={{
                         color: '#D30060',
                         fontWeight:'bold',
                         fontSize:'27px',
                     }}>
-                        How to lead a Crucial Converation? 
+                        Create Your Buzz? Think Beyond Your Next Role 
                     </h5>
-                    <h2>Divana Chiu</h2>
+                    <h2>Janice Kosanovich</h2>
                     <div className="description">
-                        <p>Director of Digital Commerce at Ben E Keith</p>
+                        <p>Vice President of PepsiCo</p>
                     </div>
                 </div>
             </div>
@@ -38,4 +38,4 @@ const CourseTypeTen = ({ data, classes }) => {
         </div>
     )
 }
-export default CourseTypeTen;
+export default CourseTypeEleven;

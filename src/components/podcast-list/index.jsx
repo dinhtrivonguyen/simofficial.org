@@ -12,14 +12,14 @@ const PodcastList = () => {
                 flexDirection: 'column',
                 alignItems: 'flex-start',
                 gap: '24px',
-                paddingLeft: '220px',
+                paddingLeft: '20px',
                 paddingTop: '20px',
             }}>
 
-                <div style={{ display: 'flex', gap: '24px', width: '100%' }}>
+                <div style={{ display: 'flex', gap: '24px', width: '100%',justifyContent:'center' }}>
                     <div style={{
-                        width: '800px',
-                        height: '800px',
+                        width: '688px',
+                        height: '650px',
                         flexShrink: 0,
                         borderRadius: '16px',
                         background: '#FFDCED',
@@ -30,8 +30,8 @@ const PodcastList = () => {
                         <CourseTypeTen />
                     </div>
                     <div style={{
-                        width: '800px',
-                        height: '800px',
+                        width: '688px',
+                        height: '650px',
                         flexShrink: 0,
                         borderRadius: '16px',
                         background: '#F0FFCA',

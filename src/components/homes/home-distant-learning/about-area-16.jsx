@@ -34,9 +34,8 @@ const AboutAreaSixteen = () => {
                                 <p>
                                     We aim for supporting girls in mountainous areas who have outstanding studying performance to encourage them to pursue higher education and realize their potential.
                                 </p>
-                                <Link href="#">
-                                    <a className="edu-btn btn-medium">Donate now &nbsp;
-                                        <img src="/assets/images/icons/favorite.png"></img></a>
+                                <Link href="#" className="edu-btn btn-medium">
+                                    Donate now<img src="/assets/images/icons/favorite.png"></img>
                                 </Link>
                             </div>
                         </div>
