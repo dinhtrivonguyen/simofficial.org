@@ -5,11 +5,11 @@ const InspirationCard = () => {
         <div style={{
             display: 'flex',
             alignItems: 'flex-start',
-            height: '80vh',
+            height: '658px',
         }}>
             <div style={{
-                width: '800px',
-                height: '800px',
+                width: '688px',
+                height: '658px',
                 flexShrink: 0,
                 borderRadius: '16px',
                 background: '#F0FFCA',

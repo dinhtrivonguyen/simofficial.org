@@ -1,22 +1,24 @@
 import React from 'react';
 import InspirationCard from '../inspiration-card';
 import CourseTypeTen from '../course/course-type-ten';
+import CourseTypeEleven from '../course/course-type-eleven';
+import CourseTypeTwelve from '../course/course-type-twelve';
 
 const PodcastItems = () => {
     return (
-        <div style={{
+        <div className='Card-grid' style={{
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'flex-start',
             gap: '24px',
-            paddingLeft: '220px',
+            paddingLeft: '20px',
             paddingTop: '20px',
         }}>
-            <div style={{ display: 'flex', gap: '24px', width: '100%' }}>
+            <div style={{ display: 'flex', gap: '24px', width: '100%',justifyContent:'center' }}>
                 <InspirationCard />
                 <div style={{
-                    width: '800px',
-                    height: '800px',
+                    width: '688px',
+                    height: '650px',
                     flexShrink: 0,
                     borderRadius: '16px',
                     background: '#FFDCED',
@@ -27,10 +29,10 @@ const PodcastItems = () => {
                     <CourseTypeTen />
                 </div>
             </div>
-            <div style={{ display: 'flex', gap: '24px', width: '100%' }}>
+            <div style={{ display: 'flex', gap: '24px', width: '100%',justifyContent:'center' }}>
                 <div style={{
-                    width: '800px',
-                    height: '800px',
+                    width: '688px',
+                    height: '650px',
                     flexShrink: 0,
                     borderRadius: '16px',
                     background: '#FFDCED',
@@ -38,11 +40,11 @@ const PodcastItems = () => {
                     flexDirection: 'column',
                     justifyContent: 'flex-end',  
                 }}>
-                    <CourseTypeTen />
+                    <CourseTypeEleven />
                 </div>
                 <div style={{
-                    width: '800px',
-                    height: '800px',
+                    width: '688px',
+                    height: '650px',
                     flexShrink: 0,
                     borderRadius: '16px',
                     background: '#F0FFCA',
@@ -51,7 +53,7 @@ const PodcastItems = () => {
                     justifyContent: 'flex-end', 
                     marginBottom: '50px', 
                 }}>
-                    <CourseTypeTen />
+                    <CourseTypeTwelve />
                 </div>
             </div>
         </div>

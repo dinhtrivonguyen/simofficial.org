@@ -87,9 +87,8 @@ const AboutAreaTen = () => {
                                 <p>
                                     of their rights, and how to speak and write their own languages - limiting their chances of employment and education.
                                 </p>
-                                <Link href="#">
-                                    <a className="edu-btn btn-medium">Donate now &nbsp;
-                                        <img src="/assets/images/icons/favorite.png"></img></a>
+                                <Link href="#" className="edu-btn btn-medium">
+                                    Donate now<img src="/assets/images/icons/favorite.png"></img>
                                 </Link>
                             </div>
                         </div>

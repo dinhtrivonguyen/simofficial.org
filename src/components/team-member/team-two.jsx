@@ -8,9 +8,9 @@ const TeamTwo = ({ instructor, image_location_path='02' }) => {
                 <div className="thumbnail-wrap">
                     <div className="thumbnail">
                         <Link href={`/team-details/${instructor.id}`}>
-                            <a>
-                                <img src={`/assets/images/team/team-${image_location_path}/${instructor.img}`} alt="team images" />
-                            </a>
+
+                            <img src={`/assets/images/team/team-${image_location_path}/${instructor.img}`} alt="team images" />
+
                         </Link>
                     </div>
                     <ul className="team-share-info">
@@ -33,7 +33,7 @@ const TeamTwo = ({ instructor, image_location_path='02' }) => {
                         letterSpacing: '-0.264px'
                     }}>
                         <Link href={`/team-details/${instructor.id}`}>
-                            <a>{instructor.name}</a>
+                            {instructor.name}
                         </Link>
                     </h5>
                     <span className="designation" style={{
@@ -59,7 +59,7 @@ const TeamTwo = ({ instructor, image_location_path='02' }) => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default TeamTwo;

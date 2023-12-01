@@ -322,6 +322,10 @@ const HeroArea = () => {
             </div>
         </div>
     );
+<<<<<<< HEAD
 };
+=======
+}
+>>>>>>> b8a838c14f887cae0e924aeb03b1f5186cc0fd97
 
 export default HeroArea;
