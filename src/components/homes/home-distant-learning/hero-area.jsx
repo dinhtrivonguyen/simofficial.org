@@ -174,7 +174,7 @@ const HeroArea = () => {
                                 data-sal-duration="1000"
                             >
                                 <Link href="#">
-                                    <a className="edu-btn">Donate now</a>
+                                    <span className="edu-btn">Donate now</span>
                                 </Link>
                             </div>
                         </div>
@@ -322,10 +322,6 @@ const HeroArea = () => {
             </div>
         </div>
     );
-<<<<<<< HEAD
 };
-=======
-}
->>>>>>> b8a838c14f887cae0e924aeb03b1f5186cc0fd97
 
 export default HeroArea;

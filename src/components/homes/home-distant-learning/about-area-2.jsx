@@ -135,10 +135,11 @@ const AboutAreaTwo = () => {
                                     data-sal="slide-up"
                                     data-sal-duration="1000"
                                 >
-                                    <Link href="/course-style-1">
-                                        <a className="edu-btn">
-                                            Make an impact now!
-                                        </a>
+                                    <Link
+                                        href="/course-style-1"
+                                        className="edu-btn"
+                                    >
+                                        Make an impact now!
                                     </Link>
                                 </div>
                             </div>
