@@ -47,7 +47,7 @@
         padding-bottom: 92px;
     }
     @media #{$sm-layout} {
-       padding-bottom: 72px;
+        padding-bottom: 72px;
     }
 }
 
@@ -57,17 +57,17 @@
         padding-top: 100px;
     }
     @media #{$sm-layout} {
-       padding-top: 80px;
+        padding-top: 80px;
     }
 }
 
 .gap-bottom-equal {
     padding-bottom: 120px;
     @media #{$md-layout} {
-       padding-bottom: 100px;
+        padding-bottom: 100px;
     }
     @media #{$sm-layout} {
-       padding-bottom: 80px;
+        padding-bottom: 80px;
     }
 }
 
@@ -148,6 +148,9 @@
     @media #{$sm-layout} {
         padding-bottom: 80px;
     }
+    @media #{$large-mobile} {
+        padding-bottom: 0;
+    }
 }
 
 .gap-lg-top-equal {
@@ -166,7 +169,6 @@
 .brand-section-gap {
     padding: 85px 0;
 }
-
 
 // Margin
 .mb--10 {
