@@ -923,6 +923,110 @@
       }
     }
   }
+  &.course-style-10 {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    border-radius: 12px 12px 0px 0px;
+    background: #fff;
+    box-shadow: 0px 0px 8px 0px rgba(175, 175, 175, 0.25);
+    gap: 10px;
+    max-width: 437px;
+    max-height: 550px;
+    margin: auto;
+    position: relative;
+
+    &:before {
+      content: "";
+      height: 10px;
+      width: 80%;
+      background-color: rgba(255, 91, 92, 0.3);
+      border-radius: 0 0 4px 4px;
+      position: absolute;
+      bottom: 0;
+      left: 10%; /* Center the before pseudo-element */
+      z-index: -1;
+      transition: var(--transition);
+    }
+    .thumbnail {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 12px 12px 0px 0px;
+      margin-bottom: 0;
+
+      .time-top {
+        right: auto;
+        left: 10px;
+      }
+      img {
+        /* Update selector from .img to img */
+        width: 397px;
+        height: 291px;
+        object-fit: cover;
+        border-radius: 12px 12px 0px 0px;
+      }
+    }
+    .content {
+      padding: 30px 30px 30px;
+      background-color: var(--color-white);
+      border-radius: 0 0 4px 4px;
+      position: relative;
+      transition: var(--transition);
+      width: 100%;
+
+      .course-level {
+        color: var(--color-secondary);
+        background-color: #FFDCED;
+        margin-bottom: 17px;
+        border-radius: 1000px;
+      }
+      .title {
+        margin-bottom: 14px;
+      }
+      p {
+        margin-bottom: 20px;
+      }
+      .description {
+        display: none;
+      }
+      .course-rating {
+        margin-bottom: 0;
+      }
+      .read-more-btn {
+        visibility: visible;
+        opacity: 1;
+        margin-bottom: 0;
+        width: 100%;
+        transition: var(--transition);
+      }
+    }
+    &:hover {
+      &:before {
+        background-color: rgba(255, 91, 92, 0.3);
+      }
+      .thumbnail {
+        margin-bottom: -75px;
+        a {
+          &:after {
+            background-color: rgba(0, 0, 0, 0.5);
+          }
+        }
+      }
+      .content {
+        .description {
+          display: block;
+        }
+        .read-more-btn {
+          margin-top: 24px;
+          margin-bottom: 0;
+          visibility: visible;
+          opacity: 1;
+        }
+      }
+    }
+  }
   &.course-box-shadow {
     box-shadow: var(--shadow-darker);
   }
@@ -941,6 +1045,7 @@
       }
     }
   }
+  
 }
 .edu-course-area {
   position: relative;
