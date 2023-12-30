@@ -18,7 +18,8 @@ const CourseTypeSeventeen = ({ data, classes }) => {
                 </div>
 
                 <div className="content" style={{
-                    width:'437px'
+                    width:'437px',
+                    height: '290px'
                 }}>
                     <span className="course-level">Episode 1</span>
                     <h5 className="title" style={{
