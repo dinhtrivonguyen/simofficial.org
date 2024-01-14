@@ -11,6 +11,14 @@ const HeroArea = () => {
                     <div className="col-lg-6">
                         <div className="banner-content">
                             <h1
+                                className="color-primary"
+                                data-sal-delay="100"
+                                data-sal="slide-up"
+                                data-sal-duration="1000"
+                            >
+                                She Inspires me
+                            </h1>
+                            <h1
                                 className="title"
                                 data-sal-delay="100"
                                 data-sal="slide-up"
@@ -173,9 +181,7 @@ const HeroArea = () => {
                                 data-sal="slide-up"
                                 data-sal-duration="1000"
                             >
-                                <Link href="#">
-                                    <span className="edu-btn">Donate now</span>
-                                </Link>
+                                <button className="edu-btn">Donate now</button>
                             </div>
                         </div>
                     </div>

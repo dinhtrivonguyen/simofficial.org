@@ -52,14 +52,14 @@ const CourseTypeNine = ({ data, classes }) => {
                         <p>{data.short_desc}</p>
                     </div>
                     <div className="read-more-btn">
-                        <a
+                        <button
                             className="edu-btn btn-small btn-secondary"
                             onClick={() => handleAddToCart(data)}
                         >
                             {cartCourses.some((item) => item.id === data.id)
                                 ? 'Donate now'
                                 : 'Donate now'}
-                        </a>
+                        </button>
                     </div>
                 </div>
             </div>

@@ -18,10 +18,10 @@
     }
     .title {
         margin-bottom: 4px;
-        color: #072b60;
+        color: var(--color-textPrimary);
         font-weight: 700;
         @media #{$large-mobile} {
-            font-size: 28px;
+            font-size: 24px;
             font-style: normal;
             line-height: 32px;
             margin-top: 10px;

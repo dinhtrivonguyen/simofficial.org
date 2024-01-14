@@ -73,12 +73,8 @@ const AboutArea = () => {
                                             labor, human trafficking, arranged
                                             child marriages, and poverty.
                                         </p>
-                                        <button
-                                            onClick={() => {
-                                                /* handle your click event here */
-                                            }}
-                                        >
-                                            Learn More
+                                        <button className="learn-more-btn">
+                                            Read More
                                         </button>
                                     </div>
                                 </div>
