@@ -40,8 +40,8 @@ const AdBannerThirthteen = () => {
                                     Apply to become SIM guest speaker
                                 </h2>
                                 <p style={paragraphStyle}>We warmly welcome women professionals from diverse cultural backgrounds and various career industries to join us in this inspiring journey.</p>
-                                <Link href="#">
-                                    <a className="edu-btn btn-medium">Become our guest speaker</a>
+                                <Link href="#" className="edu-btn btn-medium">
+                                    Become our guest speaker
                                 </Link>
                             </div>
                         </div>
@@ -49,7 +49,7 @@ const AdBannerThirthteen = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default AdBannerThirthteen;

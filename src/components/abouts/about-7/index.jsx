@@ -4,6 +4,7 @@ import PodcastItems from '../../podcast-card';
 import AboutAreaSeventeen from '../../homes/home-distant-learning/about-area-17';
 import PodcastList from '../../podcast-list';
 import AdBannerThirthteen from '../../homes/home/ad-banner-13';
+import GuestStory from '../../Guest-Story/Guest-story';
 
 const index = () => {
     return (
@@ -13,6 +14,7 @@ const index = () => {
                 <PodcastItems />
                 <AboutAreaSeventeen />
                 <PodcastList />
+                <GuestStory />
                 <AdBannerThirthteen/>
                 <Footer style_1={'bg-image footer-style-2'} />
             </div>

@@ -17,8 +17,8 @@ const HeroAreaTwo = () => {
                                 We support ethnic minority girls to achieve their educational goals and avoid outdated societal norms, child marriage, human trafficking, school dropout, and poverty.
                             </p>
                             <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                <Link href="/course-style-1">
-                                    <a className="edu-btn">Make an impact</a>
+                                <Link href="/course-style-1" className="edu-btn">
+                                    Make an impact
                                 </Link>
                             </div>
                         </div>
@@ -83,7 +83,7 @@ const HeroAreaTwo = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default HeroAreaTwo;

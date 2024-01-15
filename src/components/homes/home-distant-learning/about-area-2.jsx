@@ -177,8 +177,8 @@ const AboutAreaTwo = () => {
                                     Through She Inspires Me Scholarships and Let Her Shine funds, we aid 480+ students who are at risk at dropping out due to poverty.
                                 </p>
                                 <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                    <Link href="/course-style-1">
-                                        <a className="edu-btn">Make an impact now!</a>
+                                    <Link href="/course-style-1" className="edu-btn">
+                                        Make an impact now!
                                     </Link>
                                 </div>
                             </div>

@@ -18,23 +18,26 @@ const CourseTypeNine = ({ data, classes }) => {
     }
 
     return (
+        // <div style={containerStyle}>
+        //     <div style={cardBackgroundStyle}></div>
+        // </div>
         <div className={`edu-course course-style-3 ${classes ? classes : ''}`}>
 
             <div className="inner">
                 <div className="thumbnail">
                     <Link href={`/course-details/${data.id}`}>
-                        <a>
-                            <img
-                                src={`/assets/images/course/course-04/${data.img}`}
-                                alt="Course Meta"
-                                style={{
-                                    width: '397px',
-                                    height: '291px',
-                                    objectFit: 'cover',
-                                    borderRadius: '12px 12px 0px 0px'
-                                }}
-                            />
-                        </a>
+
+                        <img
+                            src={`/assets/images/course/course-04/${data.img}`}
+                            alt="Course Meta"
+                            style={{
+                                width: '397px',
+                                height: '291px',
+                                objectFit: 'cover',
+                                borderRadius: '12px 12px 0px 0px'
+                            }}
+                        />
+
                     </Link>
                 </div>
 
@@ -42,7 +45,7 @@ const CourseTypeNine = ({ data, classes }) => {
                     <span className="course-level">{data.level}</span>
                     <h5 className="title">
                         <Link href={`/course-details/${data.id}`}>
-                            <a>{data.title}</a>
+                            {data.title}
                         </Link>
                     </h5>
 
@@ -63,12 +66,7 @@ const CourseTypeNine = ({ data, classes }) => {
 
 
         </div>
-        // <div style={containerStyle}>
-        //     <div style={cardBackgroundStyle}></div>
-
-        // </div>
-
-    )
+    );
 }
 // const cardBackgroundStyle = {
 //     position: 'absolute', 

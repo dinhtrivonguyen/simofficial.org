@@ -17,8 +17,8 @@ const HeroArea = () => {
                                 We help ethnic minority girls escape child marriages, child labor, human trafficking, water insecurity, school dropouts, and poverty.
                             </p>
                             <div className="banner-btn" data-sal-delay="400" data-sal="slide-up" data-sal-duration="1000">
-                                <Link href="#">
-                                    <a className="edu-btn">Donate now</a>
+                                <Link href="#" className="edu-btn">
+                                    Donate now
                                 </Link>
                             </div>
                         </div>
@@ -100,7 +100,7 @@ const HeroArea = () => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 
 export default HeroArea;

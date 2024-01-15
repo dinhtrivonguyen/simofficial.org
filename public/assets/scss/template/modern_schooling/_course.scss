@@ -73,7 +73,7 @@
                 &:hover {
                     background: transparent;
                     &::after {
-                        opacity: 1;
+                        opacity: 1; 
                         visibility: visible;
                     }
                     .course-hover-content-wrapper {

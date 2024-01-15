@@ -6,7 +6,7 @@ const CourseTypeTen = ({ data, classes }) => {
             <div className="inner">
                 <div className="thumbnail">
                     <img
-                        src={`/assets/images/banner/Rectangle 582.png`}
+                        src={`/assets/images/banner/Rectangle 582(1).png`}
                         alt="Course Meta"
                         style={{
                             width: '397px',
@@ -17,10 +17,17 @@ const CourseTypeTen = ({ data, classes }) => {
                     />
                 </div>
 
-                <div className="content">
+                <div className="content" style={{
+                    width:'437px',
+                    height: '290px'
+                }}>
                     <span className="course-level">Episode 7</span>
-                    <h5 className="title">
-                        The Power Of Crucial Conversation
+                    <h5 className="title" style={{
+                        color: '#D30060',
+                        fontWeight:'bold',
+                        fontSize:'27px',
+                    }}>
+                        How to lead a Crucial Converation? 
                     </h5>
                     <h2>Divana Chiu</h2>
                     <div className="description">
