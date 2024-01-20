@@ -29,16 +29,7 @@ const counter_data = [
 
 const CounterArea = ({ home_3 = false, home_8 = false }) => {
     return (
-        <div
-            className="edu-brand-area brand-area-2 bg-image--1"
-            style={{
-                backgroundImage: 'url(/assets/images/bg/bg-image-40.png)',
-                backgroundSize: 'cover',
-                position: 'relative',
-                zIndex: '1',
-                backgroundPosition: 'center',
-            }}
-        >
+        <div className="edu-brand-area brand-area-2 bg-image--1 our-impact-section">
             <div
                 className={`${
                     home_3

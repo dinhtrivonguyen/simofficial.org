@@ -34,7 +34,6 @@ const TeamTwo = ({ instructor, image_location_path = '02' }) => {
                         </Link>
                     </h5>
                     <span className="designation">{instructor.title}</span>
-                    <p>{instructor.sm_text}</p>
                 </div>
             </div>
         </div>

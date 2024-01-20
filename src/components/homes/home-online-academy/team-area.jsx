@@ -88,7 +88,7 @@ const TeamArea = ({ about_p }) => {
                         {instructors.map((instructor) => (
                             <div
                                 key={instructor.id}
-                                className="col-lg-3 col-md-6 col-sm-6"
+                                className="col-lg-3 col-md-6 col-sm-6 pr-8 pl-8"
                                 data-sal-delay="100"
                                 data-sal="slide-up"
                                 data-sal-duration="800"

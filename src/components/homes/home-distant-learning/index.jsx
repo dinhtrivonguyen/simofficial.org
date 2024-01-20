@@ -5,6 +5,7 @@ import AboutArea from './about-area';
 import CounterArea from './counter-area';
 import MissionArea from './our-mission';
 import CoursesArea from './courses-area';
+import JourneyArea from './journey-area';
 import HeroArea from './hero-area';
 import TeamArea from '../home-online-academy/team-area';
 import AdBanner from '../home/ad-banner';
@@ -31,7 +32,7 @@ const index = () => {
                 <AboutArea />
                 <TeamArea />
 
-                <BlogArea />
+                <JourneyArea />
                 {/* <BrandArea/> */}
                 <Footer style_1={'bg-image footer-style-2'} />
             </div>

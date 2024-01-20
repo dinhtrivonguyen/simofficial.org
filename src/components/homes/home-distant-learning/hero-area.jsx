@@ -18,7 +18,7 @@ const HeroArea = () => {
                             >
                                 She Inspires me
                             </h1>
-                            <h1
+                            <h3
                                 className="title"
                                 data-sal-delay="100"
                                 data-sal="slide-up"
@@ -28,7 +28,7 @@ const HeroArea = () => {
                                     Nurturing bright futures for ethnic minority
                                     girls and women
                                 </span>
-                            </h1>
+                            </h3>
                             <div className="banner-gallery mobile">
                                 <div
                                     className="thumbnail thumbnail-1"
