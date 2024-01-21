@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -129,10 +129,46 @@ const ZoomToMarker = ({ position }) => {
 };
 
 const VietnamMap = () => {
-    const [activePosition, setActivePosition] = React.useState(null);
+    const [activePosition, setActivePosition] = useState(null);
+    const [showScrollButton, setShowScrollButton] = useState(false);
+    const mapRef = useRef(null);
 
     const handleMarkerClick = (position) => {
         setActivePosition(position);
+    };
+
+    const isElementInViewport = (el) => {
+        const rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+                (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+                (window.innerWidth || document.documentElement.clientWidth)
+        );
+    };
+
+    useEffect(() => {
+        const onScroll = () => {
+            if (mapRef.current && isElementInViewport(mapRef.current)) {
+                setShowScrollButton(true);
+            } else {
+                setShowScrollButton(false);
+            }
+        };
+
+        window.addEventListener('scroll', onScroll);
+        return () => window.removeEventListener('scroll', onScroll);
+    }, []);
+
+    const scrollToContent = () => {
+        if (mapRef.current) {
+            window.scrollTo({
+                top: mapRef.current.offsetTop + mapRef.current.clientHeight,
+                behavior: 'smooth',
+            });
+        }
     };
 
     return (
