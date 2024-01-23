@@ -169,6 +169,7 @@ button.edu-btn.btn-small {
             @media #{$large-mobile} {
                 padding: calc(51px - var(--bs-gutter-y)) 32px 0;
                 margin-bottom: 100px;
+                margin-top: 32px;
             }
         }
     }
