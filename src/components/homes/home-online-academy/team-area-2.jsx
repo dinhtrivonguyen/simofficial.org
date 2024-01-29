@@ -101,7 +101,7 @@ const TeamAreaTwo = ({ about_p }) => {
                         style={{
                             display: 'flex',
                             justifyContent: 'center',
-                            marginTop: '60px',
+                            marginTop: '32px',
                         }}
                     >
                         <button

@@ -29,6 +29,12 @@ button.edu-btn.btn-small {
     }
 }
 .edu-team-area {
+    background-color: var(--bg-color-3);
+    position: relative;
+    z-index: 1;
+    @media #{$large-mobile} {
+        padding-bottom: 56px;
+    }
     .content {
         .title {
             @media #{$large-mobile} {
@@ -70,6 +76,32 @@ button.edu-btn.btn-small {
         font-weight: 700;
         color: var(--color-primary);
         @media #{$large-mobile} {
+        }
+    }
+    .learn-more {
+        display: flex;
+        justify-content: center;
+        margin-top: 32px;
+    }
+    .scroll {
+        position: relative;
+        width: 100vw;
+        z-index: 1;
+        margin: 80px 0 0;
+        .m-scroll {
+            white-space: nowrap;
+            margin: 0;
+            span {
+                animation: scrollText 4s linear infinite;
+                display: inline-flex;
+                font-size: 32.944px;
+                line-height: 32px;
+                font-weight: var(--p-bold);
+                letter-spacing: -0.362px;
+                margin: 0;
+                padding: 0;
+                color: var(--color-textPrimary);
+            }
         }
     }
 }
@@ -208,4 +240,13 @@ button.edu-btn.btn-small {
 
 .pl-8 {
     padding-left: 8px;
+}
+
+@keyframes scrollText {
+    from {
+        transform: translateX(0%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
 }

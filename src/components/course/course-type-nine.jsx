@@ -20,9 +20,6 @@ const CourseTypeNine = ({ data, classes }) => {
     };
 
     return (
-        // <div style={containerStyle}>
-        //     <div style={cardBackgroundStyle}></div>
-        // </div>
         <div className={`edu-course course-style-3 ${classes ? classes : ''}`}>
             <div className="inner">
                 <div className="thumbnail">
@@ -66,24 +63,5 @@ const CourseTypeNine = ({ data, classes }) => {
         </div>
     );
 };
-// const cardBackgroundStyle = {
-//     position: 'absolute',
-//     top: 0,
-//     left: 0,
-//     right: 0,
-//     bottom: 0,
-//     padding: '0px 10px',
-//     borderRadius: '16px',
-//     background: '#CCE6FF',
-//     zIndex: -1,
-// };
 
-// const containerStyle = {
-//     position: 'relative',
-//     width: '640px',
-//     height: '688px',
-//     display: 'flex',
-//     justifyContent: 'center',
-//     alignItems: 'flex-start',
-// };
 export default CourseTypeNine;

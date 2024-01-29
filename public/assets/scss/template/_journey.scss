@@ -64,7 +64,6 @@
     }
     .content {
         @media #{$large-mobile} {
-            padding: 0;
             margin-top: 16px;
         }
         .course-level {

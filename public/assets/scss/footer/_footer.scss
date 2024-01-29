@@ -19,8 +19,8 @@
             height: 100%;
             background-image: url(../../images/bg/BG-3.webp);
             background-repeat: no-repeat;
-            
-            @media #{$md-layout-1} {  
+
+            @media #{$md-layout-1} {
                 display: none;
             }
         }
@@ -32,17 +32,17 @@
         }
     }
     &.footer-style-1 {
-        background-color: #F0F4F5;
+        background-color: #f0f4f5;
         .footer-top {
             .edu-footer-widget {
                 .logo {
-                   a {
-                    img {
-                        &.logo-dark {
-                            display: none;
-                        } 
+                    a {
+                        img {
+                            &.logo-dark {
+                                display: none;
+                            }
+                        }
                     }
-                   } 
                 }
             }
         }
@@ -55,7 +55,7 @@
                     color: #ffffff;
                 }
             }
-        } 
+        }
     }
     &.footer-style-3 {
         background-color: #111212;
@@ -134,8 +134,35 @@
         }
     }
     .description {
-        margin-top: 20px;
-        margin-bottom: 20px;
+        font-size: var(--font-size-16);
+        margin-bottom: 0;
+    }
+
+    .title {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 32px;
+        margin: 16px 0;
+    }
+
+    button {
+        background: var(--color-primary);
+        color: #fff;
+        display: flex;
+        height: 48px;
+        padding: 0px 20px;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        border: unset;
+        font-size: var(--font-size-b3);
+        font-weight: var(--p-bold);
+        line-height: 28px;
+        margin-top: 24px;
+        @media #{$large-mobile} {
+            width: 100%;
+        }
     }
 
     .information-list {
@@ -164,6 +191,7 @@
     .edu-footer-widget {
         position: relative;
         z-index: 1;
+        margin-bottom: 24px;
         .logo {
             a {
                 img {
@@ -176,17 +204,19 @@
         .inner {
             margin-top: 36px;
             @media #{$md-layout} {
-                margin-top: 20px;
+                margin-top: 0;
             }
             @media #{$sm-layout} {
-                margin-top: 20px;
+                margin-top: 0;
             }
         }
         .footer-link {
             list-style: none;
+            columns: 2;
             padding: 0;
             margin-bottom: 0;
             li {
+                font-size: var(--font-size-16);
                 margin-top: 0;
                 margin-bottom: 0;
                 a {
@@ -271,6 +301,7 @@
 
     &.footer-lighten {
         .widget-title {
+            margin-bottom: 16px;
             font-weight: var(--p-bold);
         }
         p {
@@ -362,7 +393,7 @@
                     @media #{$custom-lg-device-eight} {
                         left: -80px;
                     }
-                } 
+                }
                 &.shape-2 {
                     bottom: 30px;
                     left: 40px;
@@ -409,7 +440,7 @@
         .shape-group {
             li {
                 img {
-                    opacity: .3;
+                    opacity: 0.3;
                 }
                 &.shape-1 {
                     top: 45px;
@@ -417,7 +448,7 @@
                     @media #{$lg-layout-1, $custom-lg-device-two} {
                         left: 0;
                     }
-                } 
+                }
                 &.shape-2 {
                     bottom: 30px;
                     left: 40px;
@@ -425,14 +456,14 @@
                         left: 0;
                     }
                     img {
-                        opacity: .2;
+                        opacity: 0.2;
                     }
                 }
                 &.shape-3 {
                     bottom: -83px;
                     left: 46%;
                     img {
-                        opacity: .7;
+                        opacity: 0.7;
                     }
                 }
                 &.shape-4 {
@@ -442,7 +473,7 @@
                         right: 0;
                     }
                     img {
-                        opacity: .2;
+                        opacity: 0.2;
                     }
                 }
                 &.shape-5 {

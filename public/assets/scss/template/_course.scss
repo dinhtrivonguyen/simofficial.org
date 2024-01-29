@@ -501,6 +501,30 @@
                 }
             }
         }
+        @media #{$large-mobile} {
+            &:before {
+                background-color: rgba(255, 91, 92, 0.3);
+            }
+            .thumbnail {
+                margin-bottom: -75px;
+                a {
+                    &:after {
+                        background-color: rgba(0, 0, 0, 0.5);
+                    }
+                }
+            }
+            .content {
+                .description {
+                    display: block;
+                }
+                .read-more-btn {
+                    margin-top: 24px;
+                    margin-bottom: 0;
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
     }
     &.course-style-4 {
         box-shadow: var(--shadow-darkest);
