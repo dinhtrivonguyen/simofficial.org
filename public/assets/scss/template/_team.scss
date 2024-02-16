@@ -41,14 +41,14 @@
             position: relative;
             display: block;
             img {
-                border-radius: 10px;
+                border-radius: 10px 10px 0 0;
                 width: 100%;
             }
             &:after {
-                content: "";
+                content: '';
                 height: 100%;
                 width: 100%;
-                background-color: rgba(26,182,157, .6);
+                background-color: rgba(26, 182, 157, 0.6);
                 border-radius: 10px;
                 position: absolute;
                 top: 0;
@@ -69,7 +69,7 @@
         .designation {
             display: inline-block;
         }
-    } 
+    }
     .team-share-info {
         li {
             transform: translateX(10px);
@@ -93,20 +93,20 @@
                 visibility: visible;
                 opacity: 1;
                 &:nth-child(1n) {
-                    transition-delay: .2s;
-                } 
+                    transition-delay: 0.2s;
+                }
                 &:nth-child(2n) {
-                    transition-delay: .3s;
+                    transition-delay: 0.3s;
                 }
                 &:nth-child(3n) {
-                    transition-delay: .4s;
-                } 
+                    transition-delay: 0.4s;
+                }
                 &:nth-child(4n) {
-                    transition-delay: .5s;
+                    transition-delay: 0.5s;
                 }
             }
         }
-    }  
+    }
     &.team-style-1 {
         .team-share-info {
             top: 20px;
@@ -130,7 +130,7 @@
             }
         }
         &:hover {
-            .team-share-info{
+            .team-share-info {
                 li {
                     transform: translateY(0);
                     &:first-child {
@@ -148,8 +148,11 @@
         padding: 0 0px 10px;
         position: relative;
         z-index: 1;
+        @media #{$large-mobile} {
+            padding-bottom: 0;
+        }
         &:after {
-            content: "";
+            content: '';
             height: 75%;
             width: 100%;
             background-color: var(--color-white);
@@ -199,14 +202,18 @@
         .team-share-info {
             top: 35%;
         }
-    } 
+    }
     &.team-style-4 {
         position: relative;
         .thumbnail {
             margin-bottom: 0;
             a {
                 &:after {
-                    background: linear-gradient(-125deg, rgba(49,185,120,0.8) 0%, rgba(26,182,157,0.8) 100%);
+                    background: linear-gradient(
+                        -125deg,
+                        rgba(49, 185, 120, 0.8) 0%,
+                        rgba(26, 182, 157, 0.8) 100%
+                    );
                 }
             }
         }
@@ -256,15 +263,15 @@
             margin: 0;
             position: absolute;
             z-index: -1;
-             &.shape-1 {
+            &.shape-1 {
                 bottom: -20px;
                 left: 135px;
                 @media #{$lg-layout-1} {
-					left: 0px;
-				}
+                    left: 0px;
+                }
                 @media #{$custom-lg-device-eight} {
-					left: -70px;
-				}
+                    left: -70px;
+                }
             }
         }
     }
@@ -286,12 +293,12 @@
             z-index: -1;
             img {
                 transform: scaleX(-1);
-                opacity: .2;
+                opacity: 0.2;
             }
             &.shape-1 {
                 top: 20px;
                 left: -10px;
-            } 
+            }
             &.shape-2 {
                 bottom: 35%;
                 right: 130px;
@@ -312,7 +319,7 @@
     .shape-group {
         @extend %liststyle;
         @media only screen and (max-width: 991px) {
-           display: none; 
+            display: none;
         }
         li {
             position: absolute;
@@ -356,7 +363,7 @@
             position: absolute;
             z-index: -1;
             img {
-                opacity: .6;
+                opacity: 0.6;
             }
             &.shape-1 {
                 top: -165px;
@@ -368,7 +375,6 @@
             &.shape-2 {
                 top: -180px;
                 right: -55px;
-                
             }
             &.shape-3 {
                 bottom: -150px;
@@ -416,7 +422,7 @@
             display: block;
         }
         .title {
-           margin-bottom: 0;
+            margin-bottom: 0;
         }
         .team-meta {
             @extend %liststyle;
@@ -438,7 +444,7 @@
                 position: relative;
                 transition: var(--transition);
                 &:after {
-                    content: "";
+                    content: '';
                     height: 19px;
                     width: 1px;
                     background-color: #e5e5e5;
@@ -459,12 +465,11 @@
                     margin-right: 7px;
                     transition: var(--transition);
                 }
-               
+
                 .rating {
                     i {
                         color: #f8b81f;
                         margin-right: 0;
-
                     }
                     transition: var(--transition);
                 }

@@ -7,24 +7,25 @@
     position: relative;
     z-index: 1;
 
-        &::before {
-            content: '';
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 100%;
-            background-image: url(../../images/cta/cta.svg);
-            filter: brightness(0) saturate(100%) invert(52%) sepia(75%) saturate(451%) hue-rotate(121deg) brightness(96%) contrast(90%);
-            background-position: center bottom;
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../../images/cta/cta.svg);
+        filter: brightness(0) saturate(100%) invert(52%) sepia(75%)
+            saturate(451%) hue-rotate(121deg) brightness(96%) contrast(90%);
+        background-position: center bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
     @media #{$md-layout} {
-       padding: 80px 0 70px; 
+        padding: 80px 0 70px;
     }
     @media #{$sm-layout} {
-       padding: 80px 0 70px; 
+        padding: 80px 0;
     }
 
     .shape-group {
@@ -43,7 +44,7 @@
     overflow: hidden;
 
     &::before {
-        display: none
+        display: none;
     }
     .shape-group {
         @extend %liststyle;
@@ -51,10 +52,10 @@
             margin: 0;
             position: absolute;
             z-index: -1;
-             &.shape-1 {
+            &.shape-1 {
                 top: 30px;
                 left: 100px;
-            } 
+            }
             &.shape-2 {
                 bottom: -20px;
                 left: 17%;
@@ -85,7 +86,6 @@
     position: relative;
     z-index: 1;
     background-color: transparent;
-    
 
     &::before {
         content: '';
@@ -95,11 +95,12 @@
         width: 100%;
         height: 100%;
         background-image: url(../../images/bg/bg-image-4.svg);
-        filter: brightness(0) saturate(100%) invert(93%) sepia(4%) saturate(983%) hue-rotate(324deg) brightness(104%) contrast(94%);
+        filter: brightness(0) saturate(100%) invert(93%) sepia(4%)
+            saturate(983%) hue-rotate(324deg) brightness(104%) contrast(94%);
         z-index: -1;
     }
     @media #{$sm-layout} {
-        padding: 150px 0 80px; 
+        padding: 150px 0 80px;
     }
     .edu-cta-banner {
         .section-title {
@@ -126,7 +127,7 @@
         li {
             margin: 0;
             position: absolute;
-            z-index: -1;           
+            z-index: -1;
             &.shape-1 {
                 bottom: -70px;
                 left: -290px;
@@ -139,7 +140,7 @@
                         width: 60%;
                     }
                 }
-            } 
+            }
             &.shape-2 {
                 bottom: -105px;
                 right: -175px;
@@ -162,7 +163,7 @@
                 top: -70px;
                 left: 119px;
                 img {
-                    opacity: .3;
+                    opacity: 0.3;
                     @media #{$laptop-device, $smlg-device} {
                         width: 70%;
                     }
@@ -172,14 +173,14 @@
                 bottom: -115px;
                 right: 180px;
                 img {
-                    opacity: .3;
+                    opacity: 0.3;
                     @media #{$laptop-device, $smlg-device} {
                         width: 70%;
                     }
                 }
             }
         }
-    } 
+    }
 }
 
 .health-coach-wrapper {
@@ -232,12 +233,18 @@
         margin-bottom: 0;
         .title {
             margin-bottom: 28px;
+            @media #{$large-mobile} {
+                margin: 0;
+                font-size: 24px;
+                font-weight: 800;
+                line-height: 32px;
+            }
         }
     }
     .shape-group {
         @extend %liststyle;
         @media #{$sm-layout} {
-            display: none;  
+            display: none;
         }
         li {
             position: absolute;
@@ -258,19 +265,22 @@
 
     &.edu-cta-banner-area {
         &::before {
-            filter: brightness(0) saturate(100%) invert(90%) sepia(23%) saturate(5531%) hue-rotate(343deg) brightness(101%) contrast(94%);
-    
+            filter: brightness(0) saturate(100%) invert(90%) sepia(23%)
+                saturate(5531%) hue-rotate(343deg) brightness(101%)
+                contrast(94%);
         }
     }
 }
-.online-academy-cta-wrapper  {
+.online-academy-cta-wrapper {
     &.edu-cta-banner-area {
         background-image: url(../../images/cta/h-4-cta-compressed.webp);
 
         &::before {
             background-image: url(../../images/cta/h-4-cta.svg);
-            filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(10%) hue-rotate(90deg) brightness(105%) contrast(90%);
-            -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(3%) saturate(10%) hue-rotate(90deg) brightness(105%) contrast(90%);
+            filter: brightness(0) saturate(100%) invert(99%) sepia(3%)
+                saturate(10%) hue-rotate(90deg) brightness(105%) contrast(90%);
+            -webkit-filter: brightness(0) saturate(100%) invert(99%) sepia(3%)
+                saturate(10%) hue-rotate(90deg) brightness(105%) contrast(90%);
             background-size: cover;
             background-repeat: no-repeat;
         }
@@ -283,7 +293,7 @@
     overflow: hidden;
     .edu-cta-banner {
         .shape-group {
-            li{
+            li {
                 &.shape-01 {
                     top: 109px;
                     left: -68px;
@@ -313,7 +323,8 @@
 
     .edu-cta-box {
         &::before {
-            filter: brightness(0) saturate(100%) invert(56%) sepia(0%) saturate(0%) hue-rotate(221deg) brightness(90%) contrast(90%);
+            filter: brightness(0) saturate(100%) invert(56%) sepia(0%)
+                saturate(0%) hue-rotate(221deg) brightness(90%) contrast(90%);
         }
     }
 }
@@ -348,7 +359,7 @@
             }
         }
         .shape-group {
-            li{
+            li {
                 &.shape-01 {
                     top: -11px;
                     left: -118px;
@@ -394,7 +405,7 @@
         .sparator {
             margin: 0 30px;
             @media #{$sm-layout} {
-                margin: 15px 0; 
+                margin: 15px 0;
             }
             span {
                 display: block;
@@ -402,13 +413,12 @@
                 height: 70px;
                 width: 70px;
                 line-height: 60px;
-                border: 4px solid rgba(26, 182, 157, .2);
+                border: 4px solid rgba(26, 182, 157, 0.2);
                 border-radius: 50%;
                 font-size: 24px;
                 font-weight: var(--p-semi-bold);
                 color: var(--color-primary);
                 background-color: #fff;
-
             }
         }
     }
@@ -445,11 +455,10 @@
             }
             .sparator {
                 span {
-                    border: 4px solid rgba(238, 74, 98, .7);
+                    border: 4px solid rgba(238, 74, 98, 0.7);
                     color: var(--color-secondary);
                 }
             }
-        
         }
     }
     &.cta-style-2 {
@@ -463,7 +472,7 @@
                     a {
                         color: var(--color-heading);
                         &:hover {
-                            color: rgba(24, 24, 24, .75);
+                            color: rgba(24, 24, 24, 0.75);
                         }
                     }
                 }
@@ -477,7 +486,6 @@
         }
     }
 }
-
 
 .newsletter-form {
     .input-group {
@@ -496,7 +504,7 @@
                 height: 50px;
             }
             @media #{$large-mobile} {
-               width: 100%;
+                width: 100%;
             }
             /* -- Placeholder -- */
             &::placeholder {
@@ -529,6 +537,64 @@
             }
             &:hover {
                 border-radius: 5px 30px !important;
+            }
+        }
+    }
+}
+
+.edu-about-area {
+    .learn-more-btn {
+        border-radius: 8px;
+        border: 1px solid #d0d0d0;
+        background: #fff;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    @media #{$large-mobile} {
+        .align-items-center {
+            display: flex;
+            flex-direction: row;
+            .content-text {
+                order: 2;
+            }
+            .content-image {
+                order: 1;
+            }
+        }
+        .learn-more-btn {
+            width: 100%;
+            height: 48px;
+            padding: 0 20px;
+            border: 1px solid var(--color-primary);
+            color: var(--color-primary);
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .edu-btn {
+            width: 100%;
+            height: 48px;
+            border-radius: 8px;
+            padding: 8px 20px;
+            font-size: 20px;
+            line-height: 32px;
+            letter-spacing: -0.38px;
+            font-weight: 700;
+        }
+    }
+}
+.edu-course-area {
+    @media #{$large-mobile} {
+        &.gap-tb-text {
+            padding-top: 0;
+        }
+        .section-title {
+            p {
+                text-align: center;
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: -0.16px;
             }
         }
     }
