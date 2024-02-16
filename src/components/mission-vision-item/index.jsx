@@ -1,45 +1,33 @@
 import React from 'react';
 
 function MissionVisionItem({ color, icon, title, text, imgSrc, type }) {
-    const cardStyle = {
-        width: '640px',
-        height: '399px',
-        flexShrink: 0,
-        borderRadius: '12px',
-        background: type === 'mission' ? '#E2FFA4' : '#FFFCB6',
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        padding: '20px 40px'
-    };
-
-    const titleStyle = {
-        color: '#072B60',
-        fontSize: '30px',
-        fontWeight: 700,
-        lineHeight: '60px',
-        marginBottom: '10px',
-        textAlign: 'left' 
-    };
-
-    const descriptionStyle = {
-        color: '#000',
-        fontSize: '18px',
-        fontWeight: 400,
-        lineHeight: '32px',
-        letterSpacing: '-0.264px',
-        textAlign: 'left'
-    };
-
     return (
-        <div style={cardStyle}>
-            <img src={imgSrc} alt={title} style={{ alignSelf: 'start', marginBottom: '10px' }} />
-            <h4 style={titleStyle}>{title}</h4>
-            <p style={descriptionStyle}>{text}</p>
+        <div className={`mission-vision-item ${type}`}>
+            <svg
+                width="33"
+                height="33"
+                viewBox="0 0 33 33"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+            >
+                <path
+                    d="M16.5329 29.017C23.4406 29.017 29.0404 23.4172 29.0404 16.5095C29.0404 9.60175 23.4406 4.00195 16.5329 4.00195C9.62519 4.00195 4.02539 9.60175 4.02539 16.5095C4.02539 23.4172 9.62519 29.017 16.5329 29.017Z"
+                    fill="white"
+                />
+                <path
+                    d="M15.5154 9.27681C15.6104 8.99181 16.2954 8.75681 16.5554 9.27681C17.5104 11.1843 19.1379 15.2518 22.6179 16.0143C22.8254 16.0593 23.2204 16.1343 23.3154 16.5543C23.3829 16.8493 23.1704 17.1343 22.9804 17.2168C21.3354 17.9268 18.5304 19.5018 16.9654 22.8318C16.6054 23.5968 15.6829 23.1043 15.5979 22.8193C15.4329 22.2643 15.3129 21.5693 14.9979 20.9743C13.5354 18.2143 11.7079 17.3043 9.9904 16.6168C9.7029 16.5018 9.7329 16.2143 10.0379 16.1568C10.0679 16.1518 10.0954 16.1443 10.1254 16.1393C13.8079 15.3668 14.8404 11.3143 15.5204 9.27681H15.5154Z"
+                    fill="black"
+                />
+                <path
+                    d="M15.4851 9.31852C15.5751 9.05102 15.9526 9.05352 16.0401 9.32102C16.6801 11.276 18.4601 15.581 21.8876 16.1535H21.9026C22.1926 16.2035 22.2476 16.5935 21.9801 16.711C20.3901 17.416 18.1901 18.766 16.7901 21.251C16.4826 21.796 16.2501 22.3335 16.0701 22.846C15.9776 23.111 15.5976 23.1035 15.5151 22.8335C15.3601 22.311 15.1451 21.761 14.8476 21.201C13.4701 18.601 11.1051 17.2735 9.48757 16.626C9.21757 16.5185 9.25757 16.1235 9.54507 16.0685C9.57257 16.0635 9.60007 16.0585 9.62507 16.0535C13.0926 15.326 14.8451 11.236 15.4851 9.31852Z"
+                    fill="#ED207D"
+                />
+            </svg>
+
+            <h4>{title}</h4>
+            <p>{text}</p>
         </div>
     );
 }
-
-
 
 export default MissionVisionItem;

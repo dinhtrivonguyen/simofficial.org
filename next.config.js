@@ -10,8 +10,12 @@
 // };
 
 const nextConfig = {
-    reactStrictMode: false,
-    swcMinify: true,
+    output: 'export',
+    images: {
+        unoptimized: true,
+    },
+    // reactStrictMode: false,
+    // swcMinify: true,
 };
 
 module.exports = nextConfig;

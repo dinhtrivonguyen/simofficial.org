@@ -91,6 +91,7 @@ const CoursesArea = () => {
         interval: 5000,
         transitionTime: 500,
         stopOnHover: true,
+        showThumbs: false,
     };
 
     return (

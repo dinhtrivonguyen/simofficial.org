@@ -60,6 +60,7 @@ const JourneyArea = () => {
         stopOnHover: false,
         centerMode: true,
         centerSlidePercentage: 70,
+        showThumbs: false,
     };
 
     return (
